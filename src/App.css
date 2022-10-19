@@ -1,38 +1,620 @@
-.App {
-  text-align: center;
+body {
+   padding: 0px;
+   font-family: sans-serif;
+   background-color: rgb(238, 237, 236);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+
+.navbar {
+   background-color: rgb(9, 18, 68);
+}
+.navbar-brand {
+   text-shadow: 1px 1px 1px rgb(212, 248, 5);
+   font-size: 135%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formDiv {
+   border: 1px solid white;
+   border-radius: 5px;
+   padding: 0.5%;
+}
+.btn {
+   border: none;
+}
+.cartA,
+.cartIcon,
+.cartSpan,
+.locationIcon,
+.locationSpan {
+   text-decoration: none;
+   color: rgb(180, 178, 178);
+}
+/* .HiddenSignIn {
+   align-items: center;
+} */
+
+.locationIcon,
+.locationSpan:hover,
+.cartSpan,
+.cartIcon:hover,
+.HiddenSignIn:hovers {
+   color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.OurAddress i,
+.OurAddress span {
+   font-size: 130%;
+   padding: 4px;
+}
+/* signup */
+.signupbtn {
+   text-decoration: none;
+   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* header end */
+
+/* ShopNow */
+
+/* carousel */
+.carousel-inner {
+   max-height: 50vh;
+   position: relative;
+   z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-control-prev,
+.carousel-control-next {
+   opacity: 0.5;
+   background-color: black;
+   max-height: 50px;
+   max-width: 30px;
+   position: absolute;
+   margin-top: 10%;
+   border-radius: 100px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+   opacity: 0.7;
+}
+
+/* carousel end */
+
+/* category card */
+
+.card:hover {
+   box-shadow: 2px 2px 2px 2px black;
+}
+.card_1 {
+   position: relative;
+   z-index: 2;
+   margin-top: -10%;
+   width: 20rem;
+   color: black;
+   height: 20rem;
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px black;
+}
+
+.card_2 {
+   width: 20rem;
+   margin-top: 5%;
+   color: black;
+   height: 20rem;
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px black;
+}
+
+/* advertisement */
+.ad_img_div {
+   margin-bottom: 5%;
+}
+.ad_img {
+   position: relative;
+   z-index: 1;
+   height: 20rem;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+.ad_apan {
+   position: relative;
+   z-index: 2;
+}
+
+/* sliding 2 */
+
+.try {
+   min-width: 100%;
+   margin-bottom: 5%;
+}
+
+.try_heading {
+   margin-left: 35vw;
+   color: rgb(5, 16, 117);
+}
+.s2_card {
+   border-radius: 100%;
+   text-align: center;
+   margin: 10px;
+   margin-left: 15px;
+   margin-right: 15px;
+   width: 20vw;
+   height: 50vh;
+}
+.s2_card:hover {
+   animation-name: category_card;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+}
+
+@keyframes category_card {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.s2_card div img {
+   border-radius: 100px;
+   max-height: 15rem;
+}
+
+/* sign in btn */
+.signin_btn {
+   background-color: rgb(26, 155, 206);
+   margin-top: 5%;
+   margin-left: 40%;
+   border-radius: 5px;
+   padding: 0.5%;
+   box-shadow: 1px 1px 2px rgb(8, 8, 8);
+}
+.signin_btn:hover {
+   box-shadow: 2px 2px 3px black;
+   background-color: rgb(17, 146, 17);
+   color: white;
+}
+.back_to_top {
+   margin-top: 1%;
+   margin-left: 42%;
+}
+
+/* footer */
+.footer {
+   background-color: rgb(20, 70, 85);
+   color: white;
+   /* font-size: 1.2em; */
+}
+.ft-item {
+   color: white;
+   text-decoration: none;
+}
+
+.footer_location {
+   color: red;
+}
+.bi-whatsapp {
+   color: rgb(18, 184, 18);
+   font-size: 1.5em;
+}
+.bi-facebook {
+   color: blue;
+   font-size: 1.5em;
+}
+.bi-messenger {
+   color: rgb(243, 114, 40);
+   font-size: 1.5em;
+}
+.bi-instagram {
+   color: rgb(241, 38, 241);
+   font-size: 1.5em;
+}
+
+/* HOME PAGE    */
+.homepagediv {
+   background-color: white;
+}
+
+/* first sliding window */
+.shop_images {
+   max-height: 75vh;
+}
+
+.bi-signpost-fill {
+   color: brown;
+}
+.shopping_img {
+   max-height: 2rem;
+   max-width: 2rem;
+}
+
+/* google maps */
+.map_div {
+   max-width: 600px;
+   max-height: 450px;
+}
+
+/* contact info */
+#contact {
+}
+
+@keyframes example {
+   from {
+      transform: translate(0px, 1px);
+   }
+   to {
+      transform: translate(0px, 10px);
+   }
+}
+.contact_icon {
+   animation-name: example;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   font-size: 110%;
+}
+.bi-envelope {
+   color: rgb(20, 22, 133);
+}
+.bi-telephone-fill,
+.bi-person-lines-fill,
+.bi-pin-map-fill {
+   color: red;
+}
+.owner_card {
+   max-width: 350px;
+}
+.owner_img {
+   max-height: 300px;
+   max-width: 350px;
+}
+
+.table {
+   border: 6px solid rgb(33, 91, 197);
+}
+
+/* Feedback form */
+.feedback_form {
+   border: 2px solid black;
+   box-shadow: 2px 2px 2px black;
+   height: 350px;
+   margin: 5%;
+   background-image: url("./images/feedback_img.jfif");
+   background-size: cover;
+}
+.feedback_form input {
+   opacity: 1;
+}
+.feedback_input {
+   height: 100px;
+}
+
+.signin_modal {
+   border: 3px solid rgb(7, 33, 107);
+   padding: 2%;
+}
+.signin_modal input {
+   width: 30vw;
+   margin: 2%;
+}
+.signup_modal {
+   border: 3px solid rgb(240, 148, 164);
+}
+
+/* infopage */
+.updateInfoForm {
+   max-width: 50vw;
+   padding: 2%;
+   background-color: white;
+   box-shadow: 2px 2px 3px black;
+}
+
+/* social media icons */
+
+.socialmediaicons1 {
+   width: 20%;
+   position: fixed;
+   z-index: 4;
+   top: 200px;
+   transform: translate(-250px);
+   background-color: rgb(170, 236, 154);
+
+   /* font-size: 120%; */
+}
+
+.socialmediaicons2 {
+   width: 20%;
+   position: fixed;
+   z-index: 4;
+   top: 250px;
+   transform: translate(-250px);
+   background-color: rgb(161, 194, 221);
+}
+
+.socialmediaicons3 {
+   width: 20%;
+   position: fixed;
+   z-index: 4;
+   top: 300px;
+   transform: translate(-250px);
+   background-color: rgb(234, 170, 236);
+}
+
+.socialmediaicons1:hover,
+.socialmediaicons2:hover,
+.socialmediaicons3:hover {
+   transform: translate(-100px);
+}
+
+@media screen and (max-width: 500px) {
+   /* header */
+   body {
+      overflow-x: hidden !important;
+   }
+   .container-fluid {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+   }
+   .navbar-brand {
+      font-size: 100%;
+   }
+
+   .carousel-inner {
+      height: 150px;
+   }
+   .card_1 {
+      position: relative;
+      z-index: 1;
+      margin-top: 5%;
+      width: 8rem;
+      max-height: 12rem;
+   }
+   .card_2 {
+      width: 8rem;
+      max-height: 12rem;
+   }
+
+   .try_heading {
+      margin-left: 20vw;
+   }
+   .s2_card {
+      min-width: 8rem;
+   }
+   .s2_card div img {
+      max-width: 9rem;
+      border-radius: 30%;
+   }
+
+   .map_div {
+      max-width: 300px;
+      max-height: 200px;
+      margin: auto;
+   }
+   .contact_icon {
+      font-size: 60%;
+   }
+
+   .owner_card {
+      max-width: 250px;
+   }
+   .owner_img {
+      max-height: 300px;
+      max-width: 250px;
+   }
+   .feedback_form {
+      height: 400px;
+   }
+   .signin_modal input {
+      width: 25vw;
+      margin: 3%;
+   }
+   .updateInfoForm {
+      border: 0px;
+      max-width: 290px;
+      padding: 5%;
+      background-color: white;
+   }
+}
+
+@media screen and (min-width: 501px) and (max-width: 699px) {
+   /* header */
+   body {
+      overflow-x: hidden !important;
+   }
+   .container-fluid {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+   }
+   .navbar-brand {
+      font-size: 100%;
+   }
+
+   .carousel-inner {
+      height: 150px;
+   }
+
+   .card_1 {
+      position: relative;
+      z-index: 1;
+      margin-top: 5%;
+      width: 9rem;
+      max-height: 13rem;
+   }
+   .card_2 {
+      width: 9rem;
+      max-height: 13rem;
+   }
+   .s2_card {
+      width: 20vw;
+      height: 50vh;
+   }
+
+   .map_div {
+      max-width: 450px;
+      max-height: 200px;
+   }
+   .contact_icon {
+      font-size: 60%;
+   }
+   .owner_card {
+      max-width: 200px;
+   }
+   .owner_img {
+      max-height: 300px;
+      max-width: 200px;
+   }
+   .feedback_form {
+      height: 450px;
+   }
+
+   .updateInfoForm {
+      max-width: 500px;
+      padding: 2%;
+      background-color: white;
+   }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+   .navbar-brand {
+      font-size: 130%;
+   }
+   .carousel-inner {
+      height: 250px;
+   }
+
+   .card_1_3 {
+      position: relative;
+      z-index: 1;
+      margin-top: 5%;
+   }
+   .s2_card {
+      width: 20vw;
+      height: 20vh;
+   }
+
+   .map_div {
+      max-height: 400px;
+      max-width: 600;
+   }
+   .feedback_form {
+      height: 400px;
+   }
+   .updateInfoForm {
+      max-width: 600px;
+      padding: 2%;
+      background-color: white;
+   }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+   .card_1,
+   .card_2 {
+      width: 25rem;
+   }
+
+   .s2_card {
+      min-width: 40vh;
+   }
+   .s2_card div img {
+      max-width: 20rem;
+      border-radius: 50%;
+   }
+   .map_div {
+      max-width: 500px;
+      max-height: 400px;
+   }
+   .shop_vector {
+      background-image: url("./images/shopping_img.jpg");
+      background-size: cover;
+      height: 300px;
+   }
+
+   .updateInfoForm {
+      max-width: 50vw;
+      padding: 2%;
+      background-color: white;
+   }
+
+   @keyframes profile {
+      from {
+         transform: scale(0.5, 0.5);
+      }
+      to {
+         transform: scale(1, 1);
+      }
+   }
+
+   .profile_img {
+      background-image: url("./images/edit_profile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      width: 15vw;
+      height: 40vh;
+      margin-top: 6%;
+      animation-name: profile;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .navbar {
+      position: fixed;
+      min-width: 100%;
+      z-index: 3;
+      margin-top: -6%;
+   }
+   .OurAddressDiv {
+      margin-top: 6%;
+   }
+   .map_div {
+      max-width: 600px;
+      max-height: 400px;
+   }
+   .shop_vector {
+      background-image: url("./images/shopping_img.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 350px;
+   }
+   .updateInfoForm {
+      max-width: 600px;
+      padding: 2%;
+      background-color: white;
+   }
+
+   @keyframes profile {
+      from {
+         transform: translate(0px, 1px);
+      }
+      to {
+         transform: translate(0px, 30px);
+      }
+   }
+
+   .profile_img {
+      background-image: url("./images/edit_profile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 400px;
+      width: 20vw;
+      height: 40vh;
+      margin-top: 6%;
+      animation-name: profile;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+   .table_img {
+      background-image: url("./images/shopping_img_2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 350px;
+   }
 }
